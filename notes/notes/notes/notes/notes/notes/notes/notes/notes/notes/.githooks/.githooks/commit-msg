@@ -1,0 +1,13 @@
+#!/bin/sh
+# Ignore Git's template comments and use the first nonblank line.
+message=$(git stripspace --strip-comments < "$1") || exit 1
+subject=$(printf '%s\n' "$message" | head -n 1)
+if [ "${#subject}" -lt 10 ]; then
+    printf '%s\n' 'Commit rejected: the subject must be at least 10 characters.' >&2
+    exit 1
+fi
+case "$subject" in
+    feat:*|fix:*|docs:*|refactor:*|chore:*) exit 0 ;;
+    *) printf '%s\n' 'Commit rejected: start with feat:, fix:, docs:, refactor:, or chore:.' >&2
+       exit 1 ;;
+esac
