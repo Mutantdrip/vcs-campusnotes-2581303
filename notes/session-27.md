@@ -5,3 +5,5 @@ A lightweight tag points to a commit. An annotated tag stores the tagger, date, 
 ## Practice question
 
 How do you push a single tag to origin?
+
+With `git tag -n`, annotated tags show their annotation. Lightweight tags show the subject of the commit they point to.
