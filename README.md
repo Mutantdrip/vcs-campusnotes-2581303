@@ -22,3 +22,5 @@ Short study notes for CSE25303 Version Control System at IILM University. The su
 ## Contributing
 
 Add each session as a Markdown file under notes and link it from the session list. Preview the README and check the new link before opening a pull request.
+
+Use the [pull request review checklist](notes/review-checklist.md) before requesting a review.
