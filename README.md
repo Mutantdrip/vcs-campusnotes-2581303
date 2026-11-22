@@ -24,3 +24,7 @@ Short study notes for CSE25303 Version Control System at IILM University. The su
 Add each session as a Markdown file under notes and link it from the session list. Preview the README and check the new link before opening a pull request.
 
 Use the [pull request review checklist](notes/review-checklist.md) before requesting a review.
+
+### Shared Git hooks
+
+From the repository root, run `git config core.hooksPath .githooks` once per clone to enable both shared hooks. Then run `git config --get core.hooksPath` and confirm it prints `.githooks`.
