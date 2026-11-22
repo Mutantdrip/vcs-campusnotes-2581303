@@ -5,3 +5,5 @@
 ## Practice question
 
 Why can a push be rejected when someone else has already pushed?
+
+After pushing a commit from a second clone, run `git pull --ff-only` in the original clone to bring it up to date.
