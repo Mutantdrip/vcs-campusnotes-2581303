@@ -27,4 +27,4 @@ Use the [pull request review checklist](notes/review-checklist.md) before reques
 
 ### Shared Git hooks
 
-From the repository root, run `git config core.hooksPath .githooks` once per clone to enable both shared hooks.
+From the repository root, run `git config core.hooksPath .githooks` once per clone to enable both shared hooks. Then run `git config --get core.hooksPath` and confirm it prints `.githooks`.
